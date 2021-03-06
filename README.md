@@ -1,2 +1,0 @@
-# techhmr-cloudgateway
-techhmr-cloudgateway
