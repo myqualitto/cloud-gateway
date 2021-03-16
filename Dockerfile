@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:8-jdk-alpine
 EXPOSE 9094
-ADD target/techhmr-cloudgateway.jar techhmr-cloudgateway.jar
-ENTRYPOINT ["java","-jar","/techhmr-cloudgateway.jar"]
+COPY target/*.jar cloud-gateway.jar
+ENTRYPOINT ["java","-jar","/cloud-gateway.jar"]
